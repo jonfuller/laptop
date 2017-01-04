@@ -12,7 +12,6 @@ brew cask install slack
 brew cask install flowdock
 brew cask install dropbox
 brew cask install microsoft-office
-brew cask install mas
 
 brew cask install anonvpn
 
@@ -29,6 +28,7 @@ brew install wget
 brew install imagemagick
 brew install redis
 brew install node
+brew install mas
 
 # App Store apps
 mas install `mas search "Microsoft Remote Desktop" | head -1 | cut -d ' ' -f 1`
