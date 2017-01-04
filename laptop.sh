@@ -2,6 +2,7 @@
 xcode-select --install
 read -p "Press any key once that install is complete"
 
+# Homebrew + Caskroom
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
 
@@ -43,7 +44,7 @@ rvm install 2.4
 gem update --system
 gem install bundler
 
-#xamarin
+# Xamarin
 # brew cask install xamarin
 # DOESNT WORK AS OF 2016-01-03 - points to wrong address: from caskroom: https://download.xamarin.com/Installer/Mac/XamarinInstaller.dmg
 wget https://dl.xamarin.com/installer/XamarinInstaller.dmg
