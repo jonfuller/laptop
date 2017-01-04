@@ -12,6 +12,7 @@ brew cask install slack
 brew cask install flowdock
 brew cask install dropbox
 brew cask install microsoft-office
+brew cask install mas
 
 brew cask install anonvpn
 
@@ -28,6 +29,13 @@ brew install wget
 brew install imagemagick
 brew install redis
 brew install node
+
+# App Store apps
+mas install `mas search "Microsoft Remote Desktop" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "Microsoft OneNote" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "SQLPro for SQLite - database and coredata manager" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "Twitter" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "Kindle" | head -1 | cut -d ' ' -f 1`
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
