@@ -20,6 +20,7 @@ brew cask install p4merge
 brew cask install sourcetree
 brew cask install postgres
 brew cask install virtualbox
+brew cask install ios-console
 
 brew install git
 brew install openssl
