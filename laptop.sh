@@ -52,8 +52,8 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 source ~/.rvm/scripts/rvm
 
 rvm install 2.4
-gem update --system
-gem install bundler
+rvm all do gem update --system
+rvm all do gem install bundler
 
 # Xamarin
 # brew cask install xamarin
