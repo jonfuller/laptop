@@ -27,6 +27,7 @@ brew install openssl
 brew install gpg
 brew install wget
 brew install imagemagick
+brew install graphviz
 brew install redis
 brew install node
 brew install mas
