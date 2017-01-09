@@ -55,6 +55,8 @@ rvm install 2.4
 rvm all do gem update --system
 rvm all do gem install bundler
 
+bundle config build.pg --with-pg-config=/Applications/Postgres93.app/Contents/MacOS/bin/pg_config
+
 # Xamarin
 # brew cask install xamarin
 # DOESNT WORK AS OF 2016-01-03 - points to wrong address: from caskroom: https://download.xamarin.com/Installer/Mac/XamarinInstaller.dmg
