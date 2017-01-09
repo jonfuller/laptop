@@ -33,11 +33,12 @@ brew install node
 brew install mas
 
 # App Store apps
+mas install `mas search "SQLPro for SQLite - database and coredata manager" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "PG Commander" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Microsoft Remote Desktop" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Microsoft OneNote" | head -1 | cut -d ' ' -f 1`
-mas install `mas search "SQLPro for SQLite - database and coredata manager" | head -1 | cut -d ' ' -f 1`
-mas install `mas search "Twitter" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Kindle" | head -1 | cut -d ' ' -f 1`
+mas install `mas search "Twitter" | head -1 | cut -d ' ' -f 1`
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
