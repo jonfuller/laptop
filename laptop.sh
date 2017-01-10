@@ -18,7 +18,6 @@ brew cask install anonvpn
 brew cask install macvim
 brew cask install p4merge
 brew cask install sourcetree
-brew cask install postgres
 brew cask install virtualbox
 brew cask install ios-console
 
@@ -34,7 +33,6 @@ brew install mas
 
 # App Store apps
 mas install `mas search "SQLPro for SQLite - database and coredata manager" | head -1 | cut -d ' ' -f 1`
-mas install `mas search "PG Commander" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Microsoft Remote Desktop" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Microsoft OneNote" | head -1 | cut -d ' ' -f 1`
 mas install `mas search "Kindle" | head -1 | cut -d ' ' -f 1`
@@ -54,10 +52,16 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 source ~/.rvm/scripts/rvm
 
 rvm install 2.4
+rvm install 2.3.0
+
 rvm all do gem update --system
 rvm all do gem install bundler
 
-bundle config build.pg --with-pg-config=/Applications/Postgres93.app/Contents/MacOS/bin/pg_config
+# Postgres
+brew cask install postgres
+mas install `mas search "PG Commander" | head -1 | cut -d ' ' -f 1`
+bundle config build.pg --with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config
+echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" >> ~/.zshrc
 
 # Xamarin
 # brew cask install xamarin
