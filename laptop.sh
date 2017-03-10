@@ -73,6 +73,10 @@ wget https://dl.xamarin.com/installer/XamarinInstaller.dmg
 hdiutil attach -noautoopen XamarinInstaller.dmg
 open /Volumes/Xamarin\ Installer/Install\ Xamarin.app
 
+
+# Install recommended OS updates
+softwareupdate -ir --verbvose
+
 # TODO
 # vim: pathogen, or some plugin system
 # connect p4merge to git
