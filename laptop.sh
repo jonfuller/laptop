@@ -78,7 +78,6 @@ open /Volumes/Xamarin\ Installer/Install\ Xamarin.app
 softwareupdate -ir --verbvose
 
 # TODO
-# vim: pathogen, or some plugin system
+# vim - pathogen, or some plugin system
 # connect p4merge to git
 # configure git (username, email)
-# anyconnect
