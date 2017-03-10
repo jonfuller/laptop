@@ -25,6 +25,7 @@ brew cask install rdm
 brew cask install android-studio
 
 brew install git
+brew install hg
 brew install openssl
 brew install gpg
 brew install wget
