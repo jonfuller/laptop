@@ -64,6 +64,10 @@ rvm install 2.3.0
 rvm all do gem update --system
 rvm all do gem install bundler
 
+# Node
+npm install -g gulp
+npm install -g bower
+
 # Postgres
 brew cask install postgres
 mas install `mas search "PG Commander" | head -1 | cut -d ' ' -f 1`
