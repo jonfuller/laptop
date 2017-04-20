@@ -16,6 +16,7 @@ brew cask install microsoft-office
 brew cask install anonvpn
 
 brew cask install macvim
+brew cask install visual-studio-code
 brew cask install p4merge
 brew cask install sourcetree
 brew cask install virtualbox
