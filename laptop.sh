@@ -31,6 +31,7 @@ brew install hg
 brew install openssl
 brew install gpg
 brew install wget
+brew install httpie
 brew install imagemagick
 brew install graphviz
 brew install redis
