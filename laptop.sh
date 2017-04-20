@@ -23,6 +23,7 @@ brew cask install virtualbox
 brew cask install grandperspective
 brew cask install ios-console
 brew cask install rdm
+brew cask install mongohub
 brew cask install android-studio
 
 brew install git
